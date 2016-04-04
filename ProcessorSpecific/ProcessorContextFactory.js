@@ -34,7 +34,7 @@
 
     ns.ProcessorContextFactory = (new function(){
 
-        this.create = function(sn_request, sn_response){
+        this.create = function(sn_request, sn_response, sn_processor){
 
             logRequest(sn_request);
 
@@ -48,7 +48,7 @@
                         sn_response.setHeader(key, response.headers[key]);
                     }
 
-                    sn_response.writeOutput(response.mimeType, response.body);
+                    sn_processor.writeOutput(response.mimeType, response.body);
                 };
                 
                 this.getRequestBody = function () {

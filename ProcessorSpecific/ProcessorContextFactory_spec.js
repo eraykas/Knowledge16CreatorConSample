@@ -2,7 +2,7 @@
 
     describe('ProcessorContextFactory tests', function () {
 
-        var request, response, isDebugging;
+        var request, response, processor, isDebugging;
 
         beforeEach(function(){
 
@@ -16,7 +16,9 @@
 
             request = jasmine.createSpyObj('request', ['getHeaderNames', 'getHeader', 'getParameterNames', 'getParameter', 'getQueryString'])
 
-            response = jasmine.createSpyObj('response', ['setStatus', 'setHeader', 'writeOutput']);
+            response = jasmine.createSpyObj('response', ['setStatus', 'setHeader']);
+
+            processor = jasmine.createSpyObj('processor', ['writeOutput']);
         });
 
         afterEach(function () {
@@ -64,21 +66,21 @@
 
             populateRequest(headers, parameters, query);
 
-            ns.ProcessorContextFactory.create(request);
+            ns.ProcessorContextFactory.create(request, response, processor);
 
             expect(ns.gs.debug).toHaveBeenCalledWith('{"headers":{"foo":"bar","fizz":"buzz"},"parameters":{"x":"10","y":"42"},"query":"question"}');
         });
 
         it('should not log request when not debugging', function(){
 
-            ns.ProcessorContextFactory.create(request);
+            ns.ProcessorContextFactory.create(request, response, processor);
 
             expect(ns.gs.debug).not.toHaveBeenCalled();
         });
 
         it('should set the status code in the response', function () {
 
-            var context = ns.ProcessorContextFactory.create(request, response);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             context.write({statusCode:200});
             
@@ -87,7 +89,7 @@
 
         it('should set the headers in the response', function () {
 
-            var context = ns.ProcessorContextFactory.create(request, response);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             context.write({headers:{"foo":"bar", "fizz":"buzz"}});
 
@@ -98,20 +100,20 @@
 
         it('should set the mime type in the response', function () {
 
-            var context = ns.ProcessorContextFactory.create(request, response);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             context.write({mimeType:"application/json"});
 
-            expect(response.writeOutput.calls.argsFor(0)[0]).toEqual("application/json");
+            expect(processor.writeOutput.calls.argsFor(0)[0]).toEqual("application/json");
         });
 
         it('should set the body of the response', function () {
 
-            var context = ns.ProcessorContextFactory.create(request, response);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             context.write({body:"[1,2,3,4]"});
 
-            expect(response.writeOutput.calls.argsFor(0)[1]).toEqual("[1,2,3,4]");
+            expect(processor.writeOutput.calls.argsFor(0)[1]).toEqual("[1,2,3,4]");
         });
 
         it('should parse the body of the request', function () {
@@ -124,7 +126,7 @@
 
             populateRequest(null, parameters);
 
-            var context = ns.ProcessorContextFactory.create(request);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             expect(context.getRequestBody()).toEqual(data);
         });
@@ -133,7 +135,7 @@
 
             populateRequest(null, null, "foo");
 
-            var context = ns.ProcessorContextFactory.create(request);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             expect(context.getEndPoint()).toEqual("foo");
         });
@@ -142,7 +144,7 @@
 
             populateRequest(null, null, "foo?bar");
 
-            var context = ns.ProcessorContextFactory.create(request);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             expect(context.getEndPoint()).toEqual("foo");
         });
@@ -151,7 +153,7 @@
 
             populateRequest(null, null, "foo?bar");
 
-            var context = ns.ProcessorContextFactory.create(request);
+            var context = ns.ProcessorContextFactory.create(request, response, processor);
 
             expect(context.getRequestQuery()).toEqual("bar");
         });
