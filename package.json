@@ -1,0 +1,9 @@
+{
+  "name": "servicenowencapsulation ",
+  "description": "Example for Knowledge 16 Creator Con",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core":"latest"
+  }
+}
