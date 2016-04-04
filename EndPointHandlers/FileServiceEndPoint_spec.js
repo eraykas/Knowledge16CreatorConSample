@@ -27,7 +27,7 @@
 		var context, queryResult, record;
 		
 		beforeEach(function () {
-			context = jasmine.createSpyObj('context', ['getEndPoint', 'write']);
+			context = jasmine.createSpyObj('context', ['getRequestQuery', 'write']);
 
 			spyOn(ns.GlideFacade, 'getEncodedQuery').and.callFake(function(table, query){
 
@@ -38,7 +38,7 @@
 
 		it('should query app table for requested file', function () {
 
-			context.getEndPoint.and.callFake(function(){
+			context.getRequestQuery.and.callFake(function(){
 				return "foo";
 			});
 
@@ -60,7 +60,7 @@
 
 		it('should 404 for unknown request', function () {
 
-			context.getEndPoint.and.callFake(function(){
+			context.getRequestQuery.and.callFake(function(){
 				return "foo";
 			});
 
@@ -77,7 +77,7 @@
 
 		it('should 400 for multiple results', function () {
 
-			context.getEndPoint.and.callFake(function(){
+			context.getRequestQuery.and.callFake(function(){
 				return "foo";
 			});
 

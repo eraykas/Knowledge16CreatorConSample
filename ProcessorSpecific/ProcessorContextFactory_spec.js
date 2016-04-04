@@ -149,13 +149,13 @@
             expect(context.getEndPoint()).toEqual("foo");
         });
 
-        it('should split query string on ? return second half as request query', function () {
+        it('should return full query of request', function () {
 
             populateRequest(null, null, "foo?bar");
 
             var context = ns.ProcessorContextFactory.create(request, response, processor);
 
-            expect(context.getRequestQuery()).toEqual("bar");
+            expect(context.getRequestQuery()).toEqual("foo?bar");
         });
     });
 

@@ -2,5 +2,5 @@
     
     var context = ns.RestApiContextFactory.create(request, response);
 
-    ns.ApiHandlerFactory.getHandler(context).handle(context);
+    ns.ApiHandlerFactory.getHandler(context).handleRequest(context);
 })(this);

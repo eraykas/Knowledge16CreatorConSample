@@ -3,9 +3,9 @@
 	ns.FileServiceEndPoint = {
 		handleRequest : function (context) {
 
-			var endPoint = context.getEndPoint();
+			var path = context.getRequestQuery().split('?')[0];
 
-			var record = ns.GlideFacade.getEncodedQuery("x_amiam_k16cce_fileservice", "path=" + endPoint);
+			var record = ns.GlideFacade.getEncodedQuery("x_amiam_k16cce_fileservice", "path=" + path);
 
 			switch(record.getRowCount()){
 				case 0:
@@ -23,7 +23,7 @@
 					context.write(response);
 					break;
 				default:
-					context.write({statusCode:400, mimeType:"text/plain", body:"Multiple files for " + endPoint});
+					context.write({statusCode:400, mimeType:"text/plain", body:"Multiple files for " + path});
 					break;
 			}
 

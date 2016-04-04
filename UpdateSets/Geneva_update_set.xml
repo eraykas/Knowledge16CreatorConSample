@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2016-04-04 20:39:29">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<application_name>Knowledge 16 Creator Con Example</application_name>
+<application_scope>x_amiam_k16cce</application_scope>
+<application_version>1.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Geneva sample</description>
+<inserted/>
+<name>Knowledge 16 Creator Con Example</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>35370c96dbe2d6009569f11ebf9619d9</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:28</sys_created_on>
+<sys_id>10384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:28</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_3d227f0a0fe212403df9059ce1050eb2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_amiam_k16cce.EchoEndPoint&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;name&gt;EchoEndPoint&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function(ns){
+
+    var json = new global.JSON();
+
+    ns.EchoEndPoint = {
+
+        handleRequest : function (context) {
+
+            var data = context.getRequestBody();
+
+            context.write({statusCode:200, mimeType:"application/json", headers:{echo:"parrot"}, body:json.encode(data)});
+        }
+    };
+})(this);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:03:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3d227f0a0fe212403df9059ce1050eb2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;EchoEndPoint&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_3d227f0a0fe212403df9059ce1050eb2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;blake&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 19:04:05&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>10384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>EchoEndPoint</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_1be867860fe212403df9059ce1050e08</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_amiam_k16cce.demo</name><suffix>demo</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:22:52</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1be867860fe212403df9059ce1050e08</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_amiam_k16cce.demo</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_user_role_1be867860fe212403df9059ce1050e08</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:55:19</sys_updated_on></sys_user_role></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>10384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>x_amiam_k16cce.demo</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_amiam_k16cce_fileservice_mime_type</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="mime_type" table="x_amiam_k16cce_fileservice"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Mime Type</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>mime_type</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>127</max_length><name>x_amiam_k16cce_fileservice</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:29</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a790b70a0fe212403df9059ce1050eaf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Mime Type</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_dictionary_x_amiam_k16cce_fileservice_mime_type</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:29</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>14384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService.Mime Type</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_91423f0a0fe212403df9059ce1050eff</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_amiam_k16cce.FileServiceEndPoint&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;name&gt;FileServiceEndPoint&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+
+	ns.FileServiceEndPoint = {
+		handleRequest : function (context) {
+
+			var path = context.getRequestQuery().split('?')[0];
+
+			var record = ns.GlideFacade.getEncodedQuery("x_amiam_k16cce_fileservice", "path=" + path);
+
+			switch(record.getRowCount()){
+				case 0:
+					context.write({statusCode:404, mimeType:"text/plain", body:"File Not Found"});
+					break;
+				case 1:
+					record.next();
+
+					var response = {statusCode:200};
+
+					response.mimeType = record.getValue("mime_type");
+
+					response.body = record.getValue("content");
+
+					context.write(response);
+					break;
+				default:
+					context.write({statusCode:400, mimeType:"text/plain", body:"Multiple files for " + path});
+					break;
+			}
+
+		}
+	};
+})(this);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:03:58&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;91423f0a0fe212403df9059ce1050eff&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;FileServiceEndPoint&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_91423f0a0fe212403df9059ce1050eff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 20:30:34&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>14384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>FileServiceEndPoint</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_amiam_k16cce_fileservice_mime_type_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="mime_type" label="Mime Type" language="en" table="x_amiam_k16cce_fileservice"><sys_documentation action="INSERT_OR_UPDATE"><element>mime_type</element><help/><hint/><label>Mime Type</label><language>en</language><name>x_amiam_k16cce_fileservice</name><plural>Mime Types</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>bad03b0a0fe212403df9059ce1050e48</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Mime Type</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_documentation_x_amiam_k16cce_fileservice_mime_type_en</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>18384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService.Mime Type</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a6d03b0a0fe212403df9059ce1050e44</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_amiam_k16cce_fileservice</description><name>x_amiam_k16cce_fileservice</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a6d03b0a0fe212403df9059ce1050e44</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_security_acl_a6d03b0a0fe212403df9059ce1050e44</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>18384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_processor_6403334a0fe212403df9059ce1050e17</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;interactive&gt;false&lt;/interactive&gt;&lt;name&gt;JsonProcessor&lt;/name&gt;&lt;parameters/&gt;&lt;params_endpoint/&gt;&lt;path&gt;JsonProcessor&lt;/path&gt;&lt;path_endpoint&gt;x_amiam_k16cce_JsonProcessor&lt;/path_endpoint&gt;&lt;require_csrf&gt;false&lt;/require_csrf&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+        
+    var context = ns.ProcessorContextFactory.create(g_request, g_response, g_processor);
+
+    ns.ApiHandlerFactory.getHandler(context).handleRequest(context);
+})(this);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:07:21&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;6403334a0fe212403df9059ce1050e17&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;JsonProcessor&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_6403334a0fe212403df9059ce1050e17&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;blake&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 19:07:21&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>1c384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>JsonProcessor</target_name>
+<type>Processor</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_a2d03b0a0fe212403df9059ce1050e41</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a2d03b0a0fe212403df9059ce1050e41</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_security_acl display_value="x_amiam_k16cce_fileservice">e6d03b0a0fe212403df9059ce1050e40</sys_security_acl><sys_update_name>sys_security_acl_role_a2d03b0a0fe212403df9059ce1050e41</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><sys_user_role display_value="x_amiam_k16cce.fileservice.user" name="x_amiam_k16cce.fileservice.user">9ed0f30a0fe212403df9059ce1050e5f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>1c384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_7fa7bf82dbe2d6009569f11ebf961900</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_amiam_k16cce/jsonapi</base_uri><consumes>application/json</consumes><consumes_customized>true</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>JsonApiExample</name><namespace>x_amiam_k16cce</namespace><produces>application/json</produces><produces_customized>true</produces_customized><service_id>jsonapi</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-04 19:27:51</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7fa7bf82dbe2d6009569f11ebf961900</sys_id><sys_mod_count>1</sys_mod_count><sys_name>JsonApiExample</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_ws_definition_7fa7bf82dbe2d6009569f11ebf961900</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-04 19:28:32</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>24384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>JsonApiExample</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_f83dff82dbe2d6009569f11ebf9619a3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;echo&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function (ns) {
+    
+    var context = ns.RestApiContextFactory.create(request, response);
+
+    ns.ApiHandlerFactory.getHandler(context).handleRequest(context);
+})(this);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_amiam_k16cce/jsonapi/echo&lt;/operation_uri&gt;&lt;produces&gt;application/json&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/echo&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:51:46&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f83dff82dbe2d6009569f11ebf9619a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;echo&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_f83dff82dbe2d6009569f11ebf9619a3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 20:06:16&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="JsonApiExample"&gt;7fa7bf82dbe2d6009569f11ebf961900&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>28384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>echo</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_2024cb8e0fa212403df9059ce1050e08</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><licensable>true</licensable><logo/><menu/><name>Knowledge 16 Creator Con Example</name><private>false</private><scope>x_amiam_k16cce</scope><short_description/><source>x_amiam_k16cce</source><store_correlation_id/><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 15:42:08</sys_created_on><sys_id>2024cb8e0fa212403df9059ce1050e08</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 15:42:08</sys_updated_on><template/><user_role/><vendor/><vendor_prefix/><version>1.0</version></sys_app></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>50384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>Knowledge 16 Creator Con Example</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_6f27b782dbe2d6009569f11ebf9619f0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_amiam_k16cce.RestApiContextFactory&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;name&gt;RestApiContextFactory&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+
+    var json = new global.JSON();
+
+    function logRequest(request) {
+
+        if (gs.isDebugging()) {
+
+            var logValue = {
+                headers:{},
+                parameters:{}
+            };
+
+            for (var header in request.headers) {
+                logValue.headers[header] = request.headers[header];
+            }
+
+            for (var parameter in request.queryParams) {
+                logValue.parameters[parameter] = request.queryParams[parameter];
+            }
+
+            logValue.query = request.queryString;
+
+            gs.debug(json.encode(logValue));
+        }
+    }
+
+    ns.RestApiContextFactory = {
+
+        create: function(sn_request, sn_response){
+
+            logRequest(sn_request);
+
+            return {
+
+                write: function (response) {
+
+                    sn_response.setStatus(response.statusCode);
+
+                    sn_response.setHeaders(response.headers);
+
+                    sn_response.setContentType(response.mimeType);
+
+                    sn_response.getStreamWriter().writeString(response.body);
+                },
+
+                getRequestBody: function () {
+
+                    return sn_request.body.data;
+                },
+                
+                getRequestQuery: function () {
+                    return sn_request.queryString;
+                },
+
+                getEndPoint: function () {
+                    return sn_request.uri.split('/').pop();
+                }
+            };
+        }
+    };
+
+})(this);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:25:29&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;6f27b782dbe2d6009569f11ebf9619f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;RestApiContextFactory&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_6f27b782dbe2d6009569f11ebf9619f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 19:25:29&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>50384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>RestApiContextFactory</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_amiam_k16cce_fileservice_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_amiam_k16cce_fileservice"><active>true</active><array>false</array><attributes>update_synch=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_amiam_k16cce_fileservice</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bad03b0a0fe212403df9059ce1050e45</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_dictionary_x_amiam_k16cce_fileservice_null</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>54384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_9ca2bf0a0fe212403df9059ce1050e96</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="DELETE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_amiam_k16cce.ProcessorContextFactory&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;name&gt;ProcessorContextFactory&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+
+    var json = new global.JSON();
+
+    function createPropertyObj(names, getter) {
+        var propertyObj = {};
+
+        for (var index = 0; index &lt; names.length; index++) {
+            propertyObj[names[index]] = getter(names[index]);
+        }
+
+        return propertyObj;
+    }
+
+    function logRequest(request) {
+
+        if (gs.isDebugging()) {
+
+            var logValue = {};
+
+            logValue.headers = createPropertyObj(request.getHeaderNames(), function (name) {
+                return request.getHeader(name);
+            });
+
+            logValue.parameters = createPropertyObj(request.getParameterNames(), function (name) {
+                return request.getParameter(name);
+            });
+
+            logValue.query = request.getQueryString();
+
+            gs.debug(json.encode(logValue));
+        }
+    }
+
+    ns.ProcessorContextFactory = {
+
+        create : function(sn_request, sn_response, sn_processor){
+
+            logRequest(sn_request);
+
+            return {
+
+                write:function (response) {
+
+                    sn_response.setStatus(response.statusCode);
+
+                    for (var key in response.headers) {
+                        sn_response.setHeader(key, response.headers[key]);
+                    }
+
+                    sn_processor.writeOutput(response.mimeType, response.body);
+                },
+                
+                getRequestBody: function () {
+                    return sn_request.getParameter('_data');
+                },
+
+                getRequestQuery : function () {
+                    var queryString = sn_request.getQueryString();
+
+                    var splitIdx = queryString.indexOf('?');
+
+                    if (splitIdx &lt; 0) {
+                        return "";
+                    } else {
+                        return queryString.substring(splitIdx + 1);
+                    }
+                },
+
+                getEndPoint: function () {
+                    var queryString = sn_request.getQueryString();
+
+                    var splitIdx = queryString.indexOf('?');
+
+                    if (splitIdx &lt; 0) {
+                        return queryString;
+                    } else {
+                        return queryString.substring(0, splitIdx);
+                    }
+                }
+            };
+        }
+    };
+
+})(this);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:05:33&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9ca2bf0a0fe212403df9059ce1050e96&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ProcessorContextFactory&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9ca2bf0a0fe212403df9059ce1050e96&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;blake&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 19:05:33&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>54384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>ProcessorContextFactory</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_amiam_k16cce_fileservice_path_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="path" label="Path" language="en" table="x_amiam_k16cce_fileservice"><sys_documentation action="INSERT_OR_UPDATE"><element>path</element><help/><hint/><label>Path</label><language>en</language><name>x_amiam_k16cce_fileservice</name><plural>Paths</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>32d03b0a0fe212403df9059ce1050e49</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Path</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_documentation_x_amiam_k16cce_fileservice_path_en</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>58384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService.Path</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e6d03b0a0fe212403df9059ce1050e40</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_amiam_k16cce_fileservice</description><name>x_amiam_k16cce_fileservice</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e6d03b0a0fe212403df9059ce1050e40</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_security_acl_e6d03b0a0fe212403df9059ce1050e40</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>58384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_78ec83ce0fa212403df9059ce1050e8e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices>debug</choices><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>x_amiam_k16cce.logging.verbosity</name><read_roles/><suffix>logging.verbosity</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 16:20:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>78ec83ce0fa212403df9059ce1050e8e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce.logging.verbosity</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_properties_78ec83ce0fa212403df9059ce1050e8e</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 16:20:42</sys_updated_on><type>choicelist</type><value>debug</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=78ec83ce0fa212403df9059ce1050e8e"/></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>5c384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>x_amiam_k16cce.logging.verbosity</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_e6d03b0a0fe212403df9059ce1050e42</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e6d03b0a0fe212403df9059ce1050e42</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_security_acl display_value="x_amiam_k16cce_fileservice">2ed03b0a0fe212403df9059ce1050e41</sys_security_acl><sys_update_name>sys_security_acl_role_e6d03b0a0fe212403df9059ce1050e42</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><sys_user_role display_value="x_amiam_k16cce.fileservice.user" name="x_amiam_k16cce.fileservice.user">9ed0f30a0fe212403df9059ce1050e5f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>5c384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_9ed0f30a0fe212403df9059ce1050e5f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_amiam_k16cce.fileservice.user</name><suffix>fileservice.user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:29</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9ed0f30a0fe212403df9059ce1050e5f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_amiam_k16cce.fileservice.user</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_user_role_9ed0f30a0fe212403df9059ce1050e5f</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:17:25</sys_updated_on></sys_user_role></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>60384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>x_amiam_k16cce.fileservice.user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_ad714056dbe2d6009569f11ebf961941</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_amiam_k16cce/fileexample</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>FileExample</name><namespace>x_amiam_k16cce</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>fileexample</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-04 20:10:13</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ad714056dbe2d6009569f11ebf961941</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FileExample</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_ws_definition_ad714056dbe2d6009569f11ebf961941</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-04 20:10:13</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>64384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>FileExample</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>x_amiam_k16cce_fileservice_31f07b0a0fe212403df9059ce1050e4f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_amiam_k16cce_fileservice"><x_amiam_k16cce_fileservice action="INSERT_OR_UPDATE"><content>&lt;html&gt;&#13;
+&lt;body&gt;&#13;
+Hello World!&#13;
+&lt;/body&gt;&#13;
+&lt;/html&gt;</content><mime_type>text/html</mime_type><path>hello</path><sys_class_name>x_amiam_k16cce_fileservice</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:59:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>31f07b0a0fe212403df9059ce1050e4f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>hello</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>x_amiam_k16cce_fileservice_31f07b0a0fe212403df9059ce1050e4f</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:59:59</sys_updated_on></x_amiam_k16cce_fileservice></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>68384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>hello</target_name>
+<type>FileService</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_da70b70a0fe212403df9059ce1050e85</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>FileService</label><live_feed_enabled>false</live_feed_enabled><name>x_amiam_k16cce_fileservice</name><number_ref/><provider_class/><read_access>true</read_access><super_class display_value="Application File" name="sys_metadata">22590122db0212009569f11ebf961921</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>da70b70a0fe212403df9059ce1050e85</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FileService</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_db_object_da70b70a0fe212403df9059ce1050e85</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><update_access>false</update_access><user_role display_value="x_amiam_k16cce.fileservice.user" name="x_amiam_k16cce.fileservice.user">9ed0f30a0fe212403df9059ce1050e5f</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>90384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_8ab37f0a0fe212403df9059ce1050e51</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_amiam_k16cce.GlideFacade&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;name&gt;GlideFacade&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+
+	ns.GlideFacade = {
+		getEncodedQuery: function (table, query) {
+
+			var result = new GlideRecordSecure(table);
+
+			result.addEncodedQuery(query);
+
+			result.query();
+
+			return result;
+		}
+	};
+})(this);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:10:22&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8ab37f0a0fe212403df9059ce1050e51&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;GlideFacade&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_8ab37f0a0fe212403df9059ce1050e51&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;blake&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 19:10:29&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>90384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>GlideFacade</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_amiam_k16cce_fileservice_path</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="path" table="x_amiam_k16cce_fileservice"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Path</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>true</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>path</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>1000</max_length><name>x_amiam_k16cce_fileservice</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:29</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c370770a0fe212403df9059ce1050e44</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Path</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_dictionary_x_amiam_k16cce_fileservice_path</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:16:02</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>94384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService.Path</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_2ed03b0a0fe212403df9059ce1050e41</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_amiam_k16cce_fileservice</description><name>x_amiam_k16cce_fileservice</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2ed03b0a0fe212403df9059ce1050e41</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_security_acl_2ed03b0a0fe212403df9059ce1050e41</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>94384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_amiam_k16cce_fileservice__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="FileService" language="en" table="x_amiam_k16cce_fileservice"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>FileService</label><language>en</language><name>x_amiam_k16cce_fileservice</name><plural>FileServices</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3ad03b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FileService</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_documentation_x_amiam_k16cce_fileservice__en</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>98384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2ed03b0a0fe212403df9059ce1050e43</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2ed03b0a0fe212403df9059ce1050e43</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_security_acl display_value="x_amiam_k16cce_fileservice">62d03b0a0fe212403df9059ce1050e43</sys_security_acl><sys_update_name>sys_security_acl_role_2ed03b0a0fe212403df9059ce1050e43</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><sys_user_role display_value="x_amiam_k16cce.fileservice.user" name="x_amiam_k16cce.fileservice.user">9ed0f30a0fe212403df9059ce1050e5f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>98384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_script_access_97350fce0fa212403df9059ce1050eba</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_script_access"><sys_scope_script_access action="INSERT_OR_UPDATE"><example_stack_trace>Default-thread-12
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.getCurrentStackTrace(ScopeAccessProvider.java:231)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.record(ScopeAccessProvider.java:200)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.access$100(ScopeAccessProvider.java:80)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider.recordAccess(ScopeAccessProvider.java:63)
+	com.glide.sys.fencing.dependency.ScopeAccessRecorder.record(ScopeAccessRecorder.java:13)
+	com.glide.script.system.ASystemInclude.recordCrossScopeAccess(ASystemInclude.java:123)
+	com.glide.script.system.ASystemInclude.include(ASystemInclude.java:106)
+	com.glide.script.AGlideRhinoScopeHandler.isScriptInclude(AGlideRhinoScopeHandler.java:43)
+	com.glide.script.GlideRhinoScopeHandler.found(GlideRhinoScopeHandler.java:24)
+	com.glide.script.ARhinoScope.get(ARhinoScope.java:75)
+	com.glide.script.RhinoScope.get(RhinoScope.java:51)
+	com.glide.script.PackageRhinoGlobalScope.get(PackageRhinoGlobalScope.java:34)
+	org.mozilla.javascript.ScriptableObject.getProperty(ScriptableObject.java:1478)
+	org.mozilla.javascript.ScriptRuntime.getProp(ScriptRuntime.java:724)
+	org.mozilla.javascript.gen.c16558.call(sys_script_include.19f4c7ce0fa212403df9059ce1050ef2:3)
+	org.mozilla.javascript.ScriptRuntime.call(ScriptRuntime.java:1227)
+	org.mozilla.javascript.gen.c16559.call(sys_script_include.19f4c7ce0fa212403df9059ce1050ef2:1)
+	org.mozilla.javascript.gen.c16559.exec(sys_script_include.19f4c7ce0fa212403df9059ce1050ef2)
+	com.glide.script.ScriptEvaluator.execute(ScriptEvaluator.java:233)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:105)
+	com.glide.script.system.ASystemInclude.includeScript(ASystemInclude.java:143)
+	com.glide.script.system.ASystemInclude.include(ASystemInclude.java:108)
+	com.glide.script.AGlideRhinoScopeHandler.isScriptInclude(AGlideRhinoScopeHandler.java:43)
+	com.glide.script.fencing.GlidePackageScopeHandler.found(GlidePackageScopeHandler.java:30)
+	com.glide.script.ARhinoScope.get(ARhinoScope.java:75)
+	com.glide.script.RhinoScope.get(RhinoScope.java:51)
+	com.glide.script.PackageScope.get(PackageScope.java:33)
+	org.mozilla.javascript.ScriptableObject.getProperty(ScriptableObject.java:1478)
+	org.mozilla.javascript.ScriptRuntime.getProp(ScriptRuntime.java:724)
+	org.mozilla.javascript.gen.c16545.call(&lt;refname&gt;:3)
+	org.mozilla.javascript.ScriptRuntime.call(ScriptRuntime.java:1227)
+	org.mozilla.javascript.gen.c16546.call(&lt;refname&gt;:1)
+	org.mozilla.javascript.gen.c16546.exec(&lt;refname&gt;)
+	com.glide.script.ScriptEvaluator.execute(ScriptEvaluator.java:233)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:105)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:72)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:63)
+	com.glide.script.Evaluator.evaluateString(Evaluator.java:91)
+	com.glide.processors.ScriptedProcessor.process(ScriptedProcessor.java:64)
+	com.glide.processors.Processor.runProcessor(Processor.java:413)
+	com.glide.processors.Processor.processTransaction(Processor.java:203)
+	com.glide.processors.ProcessorRegistry.process(ProcessorRegistry.java:146)
+	com.glide.ui.GlideServletTransaction.process(GlideServletTransaction.java:36)
+	com.glide.ui.GlideServlet$1.run(GlideServlet.java:414)
+	java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	java.lang.Thread.run(Thread.java:682)
+</example_stack_trace><script_name>JSON</script_name><source_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</source_scope><sys_class_name>sys_scope_script_access</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 15:46:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>97350fce0fa212403df9059ce1050eba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>JSON</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_scope_script_access_97350fce0fa212403df9059ce1050eba</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 15:46:57</sys_updated_on><target_scope display_value="Global">global</target_scope></sys_scope_script_access></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>9c384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>JSON</target_name>
+<type>Scope Script Access</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_x_amiam_k16cce_fileservice_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_amiam_k16cce_fileservice" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>path</element><list_id display_value="x_amiam_k16cce_fileservice" element="NULL" name="x_amiam_k16cce_fileservice" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98d1bb0a0fe212403df9059ce1050ef0</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 19:01:43</sys_created_on><sys_id>5cd1bb0a0fe212403df9059ce1050ef0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:01:43</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>mime_type</element><list_id display_value="x_amiam_k16cce_fileservice" element="NULL" name="x_amiam_k16cce_fileservice" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98d1bb0a0fe212403df9059ce1050ef0</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 19:01:43</sys_created_on><sys_id>9cd1bb0a0fe212403df9059ce1050ef0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:01:43</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>content</element><list_id display_value="x_amiam_k16cce_fileservice" element="NULL" name="x_amiam_k16cce_fileservice" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98d1bb0a0fe212403df9059ce1050ef0</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 19:01:43</sys_created_on><sys_id>dcd1bb0a0fe212403df9059ce1050ef0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:01:43</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_amiam_k16cce_fileservice</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 19:01:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>98d1bb0a0fe212403df9059ce1050ef0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_ui_list_x_amiam_k16cce_fileservice_null</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:01:43</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>9c384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_wizard_answer_59c6f782dbe2d6009569f11ebf961944</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>FileService</answer><button_label/><dependent_value/><element/><name>FileService</name><next_question/><order>100</order><payload_name/><question display_value="Application File" name="Application File">73ebdde2db4212009569f11ebf96192b</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-04 19:23:21</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>59c6f782dbe2d6009569f11ebf961944</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FileService</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_wizard_answer_59c6f782dbe2d6009569f11ebf961944</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-04 19:23:21</sys_updated_on><table/><target_url>x_amiam_k16cce_fileservice.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>a0384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>FileService</target_name>
+<type>Answer</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_ec97bf82dbe2d6009569f11ebf96195b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="DELETE"><active>true</active><base_uri>/api/x_amiam_k16cce/jsonapiexample</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>JsonApiExample</name><namespace>x_amiam_k16cce</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>jsonapiexample</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-04 19:27:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ec97bf82dbe2d6009569f11ebf96195b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>JsonApiExample</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_ws_definition_ec97bf82dbe2d6009569f11ebf96195b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-04 19:27:07</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>a4384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>JsonApiExample</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>x_amiam_k16cce_fileservice_9a713b0a0fe212403df9059ce1050e61</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_amiam_k16cce_fileservice"><x_amiam_k16cce_fileservice action="INSERT_OR_UPDATE"><content/><mime_type/><path>duplicate</path><sys_class_name>x_amiam_k16cce_fileservice</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 19:00:16</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9a713b0a0fe212403df9059ce1050e61</sys_id><sys_mod_count>0</sys_mod_count><sys_name>duplicate</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>x_amiam_k16cce_fileservice_9a713b0a0fe212403df9059ce1050e61</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:00:16</sys_updated_on></x_amiam_k16cce_fileservice></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>a8384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>duplicate</target_name>
+<type>FileService</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_amiam_k16cce_fileservice_content</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="content" table="x_amiam_k16cce_fileservice"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Content</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>content</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>65000</max_length><name>x_amiam_k16cce_fileservice</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>44b0b70a0fe212403df9059ce1050eda</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_dictionary_x_amiam_k16cce_fileservice_content</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>d0384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService.Content</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_8f027f0a0fe212403df9059ce1050eec</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_amiam_k16cce.ApiHandlerFactory&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;name&gt;ApiHandlerFactory&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+
+    ns.ApiHandlerFactory = {
+
+        getHandler: function (context) {
+			gs.debug('gethandler');
+            switch(context.getEndPoint()){
+                case "echo":
+                    return ns.EchoEndPoint;
+                default:
+                    return ns.NotFoundEndPoint;
+            }
+        }
+    };
+})(this);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:03:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8f027f0a0fe212403df9059ce1050eec&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;ApiHandlerFactory&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_8f027f0a0fe212403df9059ce1050eec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 20:05:06&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>d0384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>ApiHandlerFactory</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_amiam_k16cce_fileservice_content_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="content" label="Content" language="en" table="x_amiam_k16cce_fileservice"><sys_documentation action="INSERT_OR_UPDATE"><element>content</element><help/><hint/><label>Content</label><language>en</language><name>x_amiam_k16cce_fileservice</name><plural>Contents</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>36d03b0a0fe212403df9059ce1050e48</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_documentation_x_amiam_k16cce_fileservice_content_en</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>d4384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService.Content</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_62d03b0a0fe212403df9059ce1050e43</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_amiam_k16cce_fileservice</description><name>x_amiam_k16cce_fileservice</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>62d03b0a0fe212403df9059ce1050e43</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_security_acl_62d03b0a0fe212403df9059ce1050e43</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>d4384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_processor_4ed2334a0fe212403df9059ce1050e9a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description/&gt;&lt;interactive&gt;false&lt;/interactive&gt;&lt;name&gt;FileProcessor&lt;/name&gt;&lt;parameters/&gt;&lt;params_endpoint/&gt;&lt;path&gt;FileProcessor&lt;/path&gt;&lt;path_endpoint&gt;x_amiam_k16cce_FileProcessor&lt;/path_endpoint&gt;&lt;require_csrf&gt;false&lt;/require_csrf&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+
+	var context = ns.ProcessorContextFactory.create(g_request, g_response, g_processor);
+
+	ns.FileServiceEndPoint.handleRequest(context);
+})(this);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:06:35&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4ed2334a0fe212403df9059ce1050e9a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;FileProcessor&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_4ed2334a0fe212403df9059ce1050e9a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;blake&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 19:06:35&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>d8384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>FileProcessor</target_name>
+<type>Processor</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_62d03b0a0fe212403df9059ce1050e45</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>62d03b0a0fe212403df9059ce1050e45</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_security_acl display_value="x_amiam_k16cce_fileservice">a6d03b0a0fe212403df9059ce1050e44</sys_security_acl><sys_update_name>sys_security_acl_role_62d03b0a0fe212403df9059ce1050e45</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:30</sys_updated_on><sys_user_role display_value="x_amiam_k16cce.fileservice.user" name="x_amiam_k16cce.fileservice.user">9ed0f30a0fe212403df9059ce1050e5f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>d8384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>x_amiam_k16cce_fileservice.x_amiam_k16cce_fileservice_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_1372f30a0fe212403df9059ce1050e84</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_amiam_k16cce.NotFoundEndPoint&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Knowledge 16 Creator Con Example&lt;/description&gt;&lt;name&gt;NotFoundEndPoint&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function (ns) {
+ 
+    var json = new global.JSON();
+    
+    ns.NotFoundEndPoint = {
+        handleRequest: function (context) {
+            context.write({statusCode:404, mimeType:"application/json", body:json.encode({message:"No handler for endpoint: " + context.getEndPoint()})});
+        }
+    };
+})(this);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;blake&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 19:04:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;1372f30a0fe212403df9059ce1050e84&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;NotFoundEndPoint&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1372f30a0fe212403df9059ce1050e84&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;blake&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 19:04:53&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>dc384c96dbe2d6009569f11ebf961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>NotFoundEndPoint</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_3df0fbc60fe212403df9059ce1050eb6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="3df0fbc60fe212403df9059ce1050eb6" sys_domain="global" table="x_amiam_k16cce_fileservice" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_id>75f07b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_amiam_k16cce_fileservice" sys_domain="global" view="Default view">3df0fbc60fe212403df9059ce1050eb6</sys_ui_section><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>mime_type</element><position>1</position><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_id>b5f07b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_amiam_k16cce_fileservice" sys_domain="global" view="Default view">3df0fbc60fe212403df9059ce1050eb6</sys_ui_section><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>path</element><position>2</position><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_id>f5f07b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_amiam_k16cce_fileservice" sys_domain="global" view="Default view">3df0fbc60fe212403df9059ce1050eb6</sys_ui_section><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_id>39f07b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_amiam_k16cce_fileservice" sys_domain="global" view="Default view">3df0fbc60fe212403df9059ce1050eb6</sys_ui_section><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_scope</element><position>4</position><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_id>79f07b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_amiam_k16cce_fileservice" sys_domain="global" view="Default view">3df0fbc60fe212403df9059ce1050eb6</sys_ui_section><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>content</element><position>5</position><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_id>b9f07b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_amiam_k16cce_fileservice" sys_domain="global" view="Default view">3df0fbc60fe212403df9059ce1050eb6</sys_ui_section><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>6</position><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_id>f9f07b0a0fe212403df9059ce1050e47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_amiam_k16cce_fileservice" sys_domain="global" view="Default view">3df0fbc60fe212403df9059ce1050eb6</sys_ui_section><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_amiam_k16cce_fileservice</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:57:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3df0fbc60fe212403df9059ce1050eb6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_amiam_k16cce_fileservice</sys_name><sys_overrides/><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_ui_section_3df0fbc60fe212403df9059ce1050eb6</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:57:59</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>dc384c96dbe2d6009569f11ebf961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table>x_amiam_k16cce_fileservice</table>
+<target_name>FileService</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_wizard_answer_abe8a7860fe212403df9059ce1050e6f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>FileService</answer><button_label/><dependent_value/><element/><name>FileService</name><next_question/><order>100</order><payload_name/><question display_value="Application File" name="Application File">73ebdde2db4212009569f11ebf96192b</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 18:22:53</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>abe8a7860fe212403df9059ce1050e6f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FileService</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>sys_wizard_answer_abe8a7860fe212403df9059ce1050e6f</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 18:22:53</sys_updated_on><table/><target_url>x_amiam_k16cce_fileservice.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>e0384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>FileService</target_name>
+<type>Answer</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_1f814c16dbe2d6009569f11ebf961907</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;FileService&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function (ns) {
+    
+    var context = ns.RestApiContextFactory.create(request, response);
+
+    ns.FileServiceEndPoint.handleRequest(context);
+})(this);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_amiam_k16cce/fileexample/fileservice&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/fileservice&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-04-04 20:11:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;1f814c16dbe2d6009569f11ebf961907&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;FileService&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Knowledge 16 Creator Con Example"&gt;2024cb8e0fa212403df9059ce1050e08&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_1f814c16dbe2d6009569f11ebf961907&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 20:29:26&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="FileExample"&gt;ad714056dbe2d6009569f11ebf961941&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>e4384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>FileService</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</application>
+<category>customer</category>
+<comments/>
+<name>x_amiam_k16cce_fileservice_bf61770a0fe212403df9059ce1050e98</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_amiam_k16cce_fileservice"><x_amiam_k16cce_fileservice action="INSERT_OR_UPDATE"><content/><mime_type/><path>duplicate</path><sys_class_name>x_amiam_k16cce_fileservice</sys_class_name><sys_created_by>blake</sys_created_by><sys_created_on>2016-04-04 19:00:10</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bf61770a0fe212403df9059ce1050e98</sys_id><sys_mod_count>0</sys_mod_count><sys_name>duplicate</sys_name><sys_package display_value="Knowledge 16 Creator Con Example" source="x_amiam_k16cce">2024cb8e0fa212403df9059ce1050e08</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Knowledge 16 Creator Con Example">2024cb8e0fa212403df9059ce1050e08</sys_scope><sys_update_name>x_amiam_k16cce_fileservice_bf61770a0fe212403df9059ce1050e98</sys_update_name><sys_updated_by>blake</sys_updated_by><sys_updated_on>2016-04-04 19:00:10</sys_updated_on></x_amiam_k16cce_fileservice></record_update>]]></payload>
+<remote_update_set display_value="Knowledge 16 Creator Con Example">10384c96dbe2d6009569f11ebf961983</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-04-04 20:39:29</sys_created_on>
+<sys_id>e8384c96dbe2d6009569f11ebf961985</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-04-04 20:39:29</sys_updated_on>
+<table/>
+<target_name>duplicate</target_name>
+<type>FileService</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

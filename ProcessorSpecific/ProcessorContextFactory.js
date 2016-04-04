@@ -56,27 +56,11 @@
                 },
 
                 getRequestQuery : function () {
-                    var queryString = sn_request.getQueryString();
-
-                    var splitIdx = queryString.indexOf('?');
-
-                    if (splitIdx < 0) {
-                        return "";
-                    } else {
-                        return queryString.substring(splitIdx + 1);
-                    }
+                    return sn_request.getQueryString();
                 },
 
                 getEndPoint: function () {
-                    var queryString = sn_request.getQueryString();
-
-                    var splitIdx = queryString.indexOf('?');
-
-                    if (splitIdx < 0) {
-                        return queryString;
-                    } else {
-                        return queryString.substring(0, splitIdx);
-                    }
+                    return sn_request.getQueryString().split('?')[0];
                 }
             };
         }
