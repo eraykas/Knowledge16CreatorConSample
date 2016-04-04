@@ -25,15 +25,15 @@
         }
     }
 
-    ns.RestApiContextFactory = (new function(){
+    ns.RestApiContextFactory = {
 
-        this.create = function(sn_request, sn_response){
+        create: function(sn_request, sn_response){
 
             logRequest(sn_request);
 
-            return (new function () {
+            return {
 
-                this.write = function (response) {
+                write: function (response) {
 
                     sn_response.setStatus(response.statusCode);
 
@@ -42,26 +42,22 @@
                     sn_response.setContentType(response.mimeType);
 
                     sn_response.getStreamWriter().writeString(response.body);
-                };
+                },
 
-                this.getRequestBody = function () {
+                getRequestBody: function () {
 
                     return sn_request.body.data;
-                };
+                },
                 
-                this.getRequestQuery = function () {
+                getRequestQuery: function () {
                     return sn_request.queryString;
-                };
+                },
 
-                this.getEndPoint = function () {
+                getEndPoint: function () {
                     return sn_request.uri.split('/').pop();
-                };
-
-                return this;
-            }());
-        };
-
-        return this;
-    }());
+                }
+            };
+        }
+    };
 
 })(this);

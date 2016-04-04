@@ -1,8 +1,8 @@
 (function (ns) {
 
-    ns.ApiHandlerFactory = (new function () {
+    ns.ApiHandlerFactory = {
 
-        this.getHandler = function (context) {
+        getHandler: function (context) {
 
             switch(context.getEndPoint()){
                 case "echo":
@@ -10,8 +10,6 @@
                 default:
                     return ns.NotFoundEndPoint;
             }
-        };
-
-        return this;
-    }());
+        }
+    };
 })(this);

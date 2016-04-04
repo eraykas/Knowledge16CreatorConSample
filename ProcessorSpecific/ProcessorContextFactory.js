@@ -32,15 +32,15 @@
         }
     }
 
-    ns.ProcessorContextFactory = (new function(){
+    ns.ProcessorContextFactory = {
 
-        this.create = function(sn_request, sn_response, sn_processor){
+        create : function(sn_request, sn_response, sn_processor){
 
             logRequest(sn_request);
 
-            return (new function(){
+            return {
 
-                this.write = function (response) {
+                write:function (response) {
 
                     sn_response.setStatus(response.statusCode);
 
@@ -49,13 +49,13 @@
                     }
 
                     sn_processor.writeOutput(response.mimeType, response.body);
-                };
+                },
                 
-                this.getRequestBody = function () {
-                    return json.decode(sn_request.getParameter('_data'));
-                };
+                getRequestBody: function () {
+                    return sn_request.getParameter('_data');
+                },
 
-                this.getRequestQuery = function () {
+                getRequestQuery : function () {
                     var queryString = sn_request.getQueryString();
 
                     var splitIdx = queryString.indexOf('?');
@@ -65,9 +65,9 @@
                     } else {
                         return queryString.substring(splitIdx + 1);
                     }
-                };
+                },
 
-                this.getEndPoint = function () {
+                getEndPoint: function () {
                     var queryString = sn_request.getQueryString();
 
                     var splitIdx = queryString.indexOf('?');
@@ -77,13 +77,9 @@
                     } else {
                         return queryString.substring(0, splitIdx);
                     }
-                };
-
-                return this;
-            }());
-        };
-
-        return this;
-    }());
+                }
+            };
+        }
+    };
 
 })(this);

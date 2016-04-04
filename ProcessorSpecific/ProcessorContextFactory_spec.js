@@ -121,7 +121,7 @@
             var data = {x:10, y:20};
 
             var parameters = {
-                "_data" : JSON.stringify(data)
+                "_data" : data
             };
 
             populateRequest(null, parameters);
