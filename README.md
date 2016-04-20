@@ -10,6 +10,9 @@ For the AMI talk at the Knowledge 16 Creator Con to demonstrate the importance o
 
 The tests are written using jasmine which can be run by loading the Test/unit_test.html in a browser.
 
+## Read more about our ServiceNow application
+
+[AssetTrack® 4 for ServiceNow](http://www.amitracks.com/assettrack-for-servicenow/?utm_medium=referral&utm_source=github.com&utm_campaign=service-now-k16cc) is the only barcode and RFID asset tracking solution built entirely within the ServiceNow platform.
 
 ## License
 
