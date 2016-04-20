@@ -12,7 +12,9 @@ The tests are written using jasmine which can be run by loading the Test/unit_te
 
 ## Read more about our ServiceNow application
 
-[AssetTrack® 4 for ServiceNow](http://www.amitracks.com/assettrack-for-servicenow/?utm_medium=referral&utm_source=github.com&utm_campaign=service-now-k16cc) is the only barcode and RFID asset tracking solution built entirely within the ServiceNow platform.
+AssetTrack® 4 enables ServiceNow customers to receive, track, audit and retire assets to make informed decisions with confidence.  Maintaining accurate asset information in ServiceNow has never been easier.
+
+Read more about [AssetTrack® 4 for ServiceNow](http://www.amitracks.com/assettrack-for-servicenow/?utm_medium=referral&utm_source=github.com&utm_campaign=service-now-k16cc), the only barcode and RFID asset tracking solution built entirely within the ServiceNow platform.
 
 ## License
 
